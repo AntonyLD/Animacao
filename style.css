@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box{
+    border: 5px solid red;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    transform: skewX(20deg);
+}
