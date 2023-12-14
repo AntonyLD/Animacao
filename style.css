@@ -6,19 +6,50 @@
 
 }
 
-body{
+.container {
+    
+    height: 60vh;
     display: grid;
-    place-items: center;
-    width: 100vw;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "vermelho verde"
+    "vermelho azul"
+    "vermelho marrom"
+    
+    
+    ;
+    
+}   
+
+.vermelho {
+    grid-area: vermelho ;
+    background-color: red;
+    
 }
 
-.box{
-    border: 5px solid red;
+
+
+.azul {
+    
+    grid-area: azul;
+    background-color: blue;
+    justify-self: right;
+    align-self: center;
 }
 
-img{
-    width: 200px;
-    height: 200px;
-    transform: skewX(20deg);
+
+.verde {  
+    grid-area: verde;  
+    background-color: green;
 }
+
+.marrom {   
+    grid-area: marrom;
+    background-color: brown;
+    
+
+}
+
+
+
